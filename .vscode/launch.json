@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Code Analyzer",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code-analysis/run.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "DEBUG": "true"
+      }
+    },
+    {
+      "name": "Code Structure",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/code-structure/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "DEBUG": "true"
+      }
+    }
+  ]
+}
