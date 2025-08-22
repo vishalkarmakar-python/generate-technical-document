@@ -13,7 +13,7 @@ from app.generate_document import Generate
 from app.language_model import Ollama
 from app.language_separator import ABAP
 from app.prompt_generator import PromptGenerator
-from app.structured_output import Analysis
+from app.structured_output import Code_Analysis, Code_Structure, Technical_Specification
 from typing import List
 
 # Defines the public API of the 'app' package.
@@ -23,6 +23,8 @@ __all__: List[str] = [
     "Ollama",
     "ABAP",
     "PromptGenerator",
-    "Analysis",
+    "Code_Analysis",
+    "Code_Structure",
+    "Technical_Specification",
     "CreateDocument",
 ]

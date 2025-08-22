@@ -20,9 +20,8 @@ class ABAP:
     """
 
     # A mapping of ABAP object types to a list of keywords that commonly appear in them.
-    # This is used by `Document_Splitter` to guess the type of a given code file.
     _DOCUMENT_KEYWORDS: Dict[str, List[str]] = {
-        # === Database Objects & CDS Views ===
+        # === Database Objects ===
         "DATABASE TABLE": [
             "tableCategory",
             "deliveryClass",
@@ -206,8 +205,7 @@ class ABAP:
         ],
     }
 
-    # High-level categorization of document types. This simplifies the process
-    # of selecting the correct prompt in `PromptGenerator`.
+    # High-level categorization of document types. This simplifies the process of selecting the correct prompt in `PromptGenerator`.
     _DOCUMENT_CATEGORIES: Dict[str, List[str]] = {
         "DATABASE": [
             "DATABASE TABLE",
